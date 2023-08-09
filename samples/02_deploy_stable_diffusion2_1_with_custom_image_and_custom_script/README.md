@@ -1,0 +1,6 @@
+# Triumph Tech - Deploy Stable Diffusion Models with Full Control to a SageMaker Endpoint
+
+This repository includes a notebook that facilitates the deployment of a stable diffusion model using a custom inference script. It also provides the option to use a custom ECR image.
+
+## 📓 deploy-stable-diffusion-2-1 notebook
+In this notebook, we will deploy the stable diffusion 2.1 base model by utilizing a custom inference script. Firstly, we will create the new inference script. Additionally, if you prefer to use a custom ECR image, you can refer to the [extending-image-notebook](../01_extending_aws_dlc_images/extending-image.ipynb) for detailed instructions. The extending-image notebook provides a step-by-step guide on creating a custom ECR image by extending AWS DLC images and integrating it into the deployment process. Alternatively, if you opt for an AWS DLC image, make sure to include a requirements.txt file that includes the necessary Python libraries for running the Stable Diffusion model. Finally, we will deploy the model to a SageMaker endpoint and test its functionalities, which include text2image, image2image, and text2vector capabilities.
