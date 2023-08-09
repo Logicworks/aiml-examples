@@ -1,6 +1,6 @@
 
 
-# Triumph Tech - Amazon SageMaker Examples
+# Amazon SageMaker Examples
 
 Example Jupyter notebooks that demonstrate how to use [Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) and the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/).
 
