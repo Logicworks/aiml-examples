@@ -45,7 +45,7 @@ To deploy the stability model, please follow these steps after assuming that you
 
 ```python
 endpoint_config_name = 'xxxxxxxx'  # Replace 'xxxxxxxx' with the actual endpoint config name from the SageMaker console.
-endpoint_name = name_from_base('stable-diffusion-model-triumph-demo')
+endpoint_name = name_from_base('stable-diffusion-model-xxxx-demo')
 
 sagemaker_client = boto3.client('sagemaker')
 response = sagemaker_client.create_endpoint(

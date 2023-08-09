@@ -1,4 +1,4 @@
-# Triumph Tech - Deploy Stable Diffusion Models with Full Control to a SageMaker Endpoint
+# Deploy Stable Diffusion Models with Full Control to a SageMaker Endpoint
 
 This repository includes a notebook that facilitates the deployment of a stable diffusion model using a custom inference script. It also provides the option to use a custom ECR image.
 

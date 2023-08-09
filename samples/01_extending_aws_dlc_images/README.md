@@ -1,4 +1,4 @@
-# Triumph Tech - Amazon Deep Learning Containers (DLC) - Extending base containers
+# Amazon Deep Learning Containers (DLC) - Extending base containers
 
 This repository contains one notebook that assist in the creation of a Docker image and an ECR (Elastic Container Registry) image.
 
