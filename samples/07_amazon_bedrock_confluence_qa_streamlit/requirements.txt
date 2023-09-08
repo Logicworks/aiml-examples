@@ -1,0 +1,5 @@
+streamlit==1.25.0
+lxml==4.9.2
+langchain==0.0.249
+faiss-cpu==1.7.4
+atlassian-python-api
