@@ -35,6 +35,19 @@ By deploying in a VPC, users maintain control over their data, reducing the risk
 
 ![Solution Architecture](./docs/imgs/solution_architecture.png)
 
+1. Once a customer has access to GenFlow, Logicworks will share GenFlow’s CloudFormation template via S3 path with the customer’s AWS account.
+2. Upon launching the solution via CloudFormation, an SNS topic is created which the customer’s email will be subscribed to. Users will receive a notification once the EC2 is ready, along with the link access to the GenFlow’s web UI and link to access Grafana to view the instance health metrics (e.g. VRAM usage).
+3. An EC2 deploys the GenFlow AMI image from Logicwork’s ECR. Each GenFlow solution (e.g. TextGen, ImageGen) have their own dedicated images curated by Logicwork. Users will be able to choose the solutions to deploy via CloudFormation deployment.
+4. Once the EC2 is ready for use, users can access the web UI with the credentials provided in their email notification.
+5. If a user does not define a S3 bucket during the CloudFormation deployment, a GenFlow bucket is created to store training data and model artifacts. GenFlow allows users to copy their data from S3 into the instance for model fine-tuning. 
+6. Elastic File Storage (EFS) is used to provide elastic storage volume such users will not have to worry about manually provisioning storage. 
+7. GenFlow is integrated with vector databases such as AWS OpenSearch or Kendra such that users can define the index ID they want to use for RAG applications.
+8. Users can deploy foundational models or fine-tuned LORA models and deploy to a SageMaker endpoint and test the endpoint via the web UI.
+9. Data will be encrypted at rest using KMS. GenFlow uses different storage services (EBS, EFS and S3), each one of them will have a separate KMS key to enhance security. Services like EBS and EFS enforces data-in-transit encryption by default.
+10. GenFlow EC2 instance is deployed inside a private subnet, an application load balancer will be used to connect to the instance. WAF will be configured to monitor application load balancer traffic and block common web exploits and bots. Users also have the option to deploy GenFlow in their own VPC.
+11. SSL termination can be configured if customer have their own domain on Route53 using AWS Certificate Manager.
+12. AWS Bedrock is integrated with TextGen such users that can use any of the available large language foundational models.
+
 ## Security
 
 Security is paramount when handling private data, which may contain sensitive business or personal information. GenFlow enhances security with:
