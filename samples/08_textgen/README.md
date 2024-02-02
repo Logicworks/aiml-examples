@@ -9,7 +9,7 @@ The field of generative AI has revolutionized various industries by enabling the
 LaunchPad is a no-code tool designed to democratize access to generative AI models. It is specifically tailored for non-technical domain experts and ensures data privacy and security. LaunchPad offers a suite of applications including TextGen, ImageGen, VideoGen, and MusicGen, each delivered through AMI images curated by Logicworks. It provides a web UI interface playground for users to explore SOTA models in various modalities. This blog will focus on leveraging TextGen for accelerating the exploration and development of generative AI for text applications.
 
 <p align="center">
-  <img src="./docs/imgs/LaunchPad.png" alt="LaunchPad" width="288"/>
+  <img src="./docs/imgs/launchpad.png" alt="LaunchPad" width="288"/>
 </p>
 
 ## TextGen
