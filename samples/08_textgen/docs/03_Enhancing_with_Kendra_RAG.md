@@ -34,7 +34,7 @@ By integrating Kendra RAG, the chatbot can access a wider range of information a
 
 ### Navigate to the Chat Interface
 
-- Open GenFlow and go to the "Chat" tab.
+- Open LaunchPad and go to the "Chat" tab.
 
 ### Access the RAG Configuration
 
@@ -44,7 +44,7 @@ By integrating Kendra RAG, the chatbot can access a wider range of information a
 
 - Enable the "AWS Kendra" feature and apply your settings.
 
-By activating these settings, GenFlow will use the LangChain Kendra Conversational Retrieval Chain to enrich chatbot responses with content fetched from Kendra documents.
+By activating these settings, LaunchPad will use the LangChain Kendra Conversational Retrieval Chain to enrich chatbot responses with content fetched from Kendra documents.
 
 ## Enhanced Chatbot Interaction with Kendra Integration
 

@@ -4,7 +4,7 @@ This section covers the training process to enhance the model's knowledge about 
 
 ## S3 File Structure
 
-For the GenFlow-TextGen app to seamlessly interact with your S3 bucket, it's crucial to maintain a specific file structure. This ensures that datasets, models, and LoRA configurations are easily accessible. In this tutorial, you will be required to download the `langchain_expert.json` from the provided GitHub repository. Once downloaded, you should upload this file into the 'train dataset' directory within your linked S3 bucket.
+For the LaunchPad-TextGen app to seamlessly interact with your S3 bucket, it's crucial to maintain a specific file structure. This ensures that datasets, models, and LoRA configurations are easily accessible. In this tutorial, you will be required to download the `langchain_expert.json` from the provided GitHub repository. Once downloaded, you should upload this file into the 'train dataset' directory within your linked S3 bucket.
 
 Here's the required structure:
 - **Datasets**: Store your training datasets in the following path: `dataset/train/*.json`. The app will look for `.json` files under this directory when you choose to download training data.
@@ -25,7 +25,7 @@ To download the training dataset:
 
 ## Uploading to S3
 
-The GenFlow-TextGen app also provides the capability to upload models and LoRA configurations directly to your S3 bucket.
+The LaunchPad-TextGen app also provides the capability to upload models and LoRA configurations directly to your S3 bucket.
 
 To initiate the upload:
 
